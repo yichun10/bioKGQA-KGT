@@ -81,15 +81,20 @@ for item in tqdm(data):
         #Extract Key Information
         prompt = """
         You need to follow these three steps based on your biomedical knowledge:
-        step1:Extract the name of the head entity and the type of the tail entity in my question,with the head defined as the active voice of the problem and the tail defined as the passive voice of the problem. The entity types include: Drug, Genesymbol... 
+        step1:Extract the name of the head entity and the type of the tail entity in my question,with the head defined as the active voice of the problem and the tail defined as the passive voice of the problem. The entity types include: Drug, Genesymbol, Cancer, CancerCell, Fusion, SnvCarcinogenicity, Expression, SnvPartial, CNA, SnvDrugrule, SnvPathogenic, SnvFull, SnvFunction, GeneticDisease, Pathway, ClinicalTrial, Soc, CancerAlias, DrugAlias. 
         step2:Based on the entity type from step 1, select an attribute from the attribute list that best fits my question.
         step3:If there is only one head entity name, the output format should be(head entity name, tail entity type, attribute); if there are two head entity names, the output format should be(head entity name 1,tail entity type, attribute),(head entity name 2,tail entity type, attribute).
         
         The attribute list is:
-        "Drug": "drug.id, drug.name...
-        For example:
+        "Drug": "drug.id, drug.name, drug.name_en, drug.description, drug.class_type, drug.nmpa_approved, drug.fda_approved, drug.commodity_name",
+        "Cancer":"cancer.name, cancer.description, cancer.id, cancer.name_en",
+        "Genesymbol":"genesymbol.id, genesymbol.name, genesymbol.grch37_refseq, genesymbol.tsg, genesymbol.description, genesymbol.oncogene, genesymbol.genesymbol_ncbi,genesymbol.full_name",
+        ......
 
-        """
+        For example:
+        What type of cancer can bexarotene treat?(bexarotene,Cancer,cancer.name)
+        What are the targeted drugs for ERBB2 in lung cancer?(lung cancer,Drug,drug.class_type),(ERBB2,Drug,drug.class_type)
+        """#Due to copyright issues, the attribute list portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
         input_text1 = prompt + old_question
         sequences = pipeline1(
             input_text1,
@@ -219,13 +224,20 @@ for item in tqdm(data):
             G = nx.DiGraph() 
             edges = [  
                 ("Drug", "Genesymbol", {"relation": "activation_to"}), 
+                ("Genesymbol", "Drug", {"relation": "activation_to"}),
                 ("Drug", "Cancer", {"relation": "treatment"}),  
-                #...
-            ]  
+                ("Cancer", "Drug", {"relation": "treatment"}), 
+                ("CancerCell", "DrugComb", {"relation": "resistance_to"}),  
+                ("CancerCell", "Drug", {"relation": "resistance_to"}),  
+                ("Drug", "CancerCell", {"relation": "resistance_to"}), #
+                ("CancerCell", "Cancer", {"relation": "originated_from"}),  
+                ("Cancer", "CancerCell", {"relation": "originated_from"}), 
+                ("Fusion", "Genesymbol", {"relation": "has_3gene"})
+                ......
+            ]  #Due to copyright issues, the ellipsis portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
             G.add_edges_from(edges)  
-
-            node_information = """(Drug)-[:activation_to {}]->(Genesymbol),(Drug)-[:treatment {}]->(Cancer)...
-            """
+            node_information = """(Drug)-[:activation_to {}]->(Genesymbol),(Drug)-[:treatment {}]->(Cancer)......
+            """#Due to copyright issues, the ellipsis portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
             shortest_paths = nx.all_shortest_paths(G, source=first_element, target=second_element)
             path_prompts = ""
             rel_links = [] 
@@ -302,10 +314,14 @@ for item in tqdm(data):
         #Text2Cypher
         prompt = """
         Given a knowledge graph, answer the question according to the schema of the knowledge graph.
-        The schema of the knowledge graph includes the following:
-        (Drug)-[:activation_to {}]->(Genesymbol)...
-        example:
-
+        Note:Pay attention to the direction of the arrow when generating a cypher statement.
+        example :
+        Create a Cypher statement to answer the following question:What targeted drugs do A have?The name of the head entity is a.No intermediate entity.The relationship chain pattern is (Drug)-[:inhibition_to {}]->(Cancer).The selected attribute is durg.class_type.
+        MATCH p=(drug:Drug)-[:inhibition_to]-(cancer:Cancer) WHERE cancer.name='a' RETURN p,durg.class_type limit 10
+        Create a Cypher statement to answer the following question:What drug is a resistant to a?The name of the head entity is a.The head entity type is SnvFull,the middle entity type is CancerCell, and the tail entity type is Drug.The relationship chain pattern is (CancerCell)-[:has_var {}]->(SnvFull), (CancerCell)-[:resistance_to {}]->(Drug).The selected attribute is drug.name.
+        MATCH p=(snvfull:SnvFull)-[:has_var]-(cancercell:CancerCell)-[:resistance_to]-(drug:Drug) WHERE snvfull.name='a' RETURN p,drug.name limit 10
+        Create a Cypher statement to answer the following question:What targeted drugs for a?No intermediate entity.The specific name of the head entity is:b,c,d。The relationship chain pattern is (Drug)-[:treatment {}]->(Cancer).The selected attribute is drug.name.
+        MATCH p=(drug:Drug)-[:treatment]-(cancer:Cancer) WHERE cancer.name IN ['b', 'c', 'd'] RETURN p,drug.name limit 10
         """
 
         question_pro="""
@@ -345,7 +361,14 @@ for item in tqdm(data):
         You are a reasoning robot, and you need to perform the following two steps step by step: 1. Output a corresponding natural language sentence for each relationship chain. 2. Answer my question using natural language from step 1. 
         Note: The output format is: Output: One sentence in natural language.
         For example:
-
+        (ALK-p.L1196M-巨细胞肺癌)-[:resistance_to {evidence_level: 'case report'}]->(克唑替尼) 克唑替尼
+        (ALK-p.C1156Y-巨细胞肺癌)-[:resistance_to {evidence_level: 'clinical trial - phase2'}]->(克唑替尼) 克唑替尼
+        (ALK-p.F1174V-巨细胞肺癌)-[:resistance_to {evidence_level: 'clinical study'}]->(克唑替尼) 克唑替尼
+        (ALK-p.C1156Y-巨细胞肺癌)-[:resistance_to {evidence_level: 'case report'}]->(luminespib) luminespib
+        (ALK-p.F1245C-巨细胞肺癌)-[:resistance_to {evidence_level: 'case report'}]->(克唑替尼) 克唑替尼
+        (CMTR1-ALK-巨细胞肺癌)-[:resistance_to {evidence_level: 'case report'}]->(克唑替尼) 克唑替尼
+        What drugs are resistant to ALK in giant cell lung cancer?
+        Output: ALK in giant cell lung cancer are resistant to clotozantinib and luminaspib.
         """
         input_text1 = prompt + result_string_with_separator+old_question
         sequences = pipeline1(
@@ -373,6 +396,7 @@ for item in tqdm(data):
             "answer": out
             }
         )
+        json.dump(dataset, open('/bioKGQA/answer/codellama13_SOKG.json', 'w', encoding='utf-8'), indent=4,ensure_ascii=False)
     except Exception as e:
         exception_(old_question)
-json.dump(dataset, open('output_route', 'w', encoding='utf-8'), indent=4,ensure_ascii=False)
+        json.dump(dataset, open('/bioKGQA/answer/codellama13_SOKG.json', 'w', encoding='utf-8'), indent=4,ensure_ascii=False)
