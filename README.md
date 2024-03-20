@@ -32,13 +32,21 @@ You can download the corresponding model from the official website. For instance
 You can also visit the link below to download llama2:
 https://huggingface.co/meta-llama
 Please save the downloaded model in bioKGQA/model.
+Note: If the Codellama downloaded from the official website cannot be used directly, you can complete the conversion according to the following steps.
+
+1、In the downloaded folder, such as CodeLlama-13b Instrument, create a new folder 13d_hf.
+
+2、Run the following code directly.
+```bash
+python /bioKGQA/Tools/convert_llama_weights_to_hf.py --input_dir /bioKGQA/model/CodeLlama-13b-Instruct --model_size 13B --output_dir /bioKGQA/model/CodeLlama-13b-Instruct/13b_hf
+```
 ### Quick Start
 You can directly run the following code to complete basic inference.
 ```bash
 import torch
 from transformers import AutoModel, AutoTokenizer, pipeline
 
-model1 = "/play/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
+model1 = "/bioKGQA/model/CodeLlama-13b-Instruct/13b_hf" #Your model path
 tokenizer = AutoTokenizer.from_pretrained(model1)
 pipeline1 = transformers.pipeline(
     "text-generation",
