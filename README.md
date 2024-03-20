@@ -31,7 +31,9 @@ You can obtain the SOKG_dataset.json from the dataset folder, which is a dataset
 You can download the corresponding model from the official website. For instance, if you need to download CodeLlama, you can visit the link [](https://github.com/facebookresearch/codellama.git)https://github.com/facebookresearch/codellama.git.
 You can also visit the link below to download llama2:
 https://huggingface.co/meta-llama
+
 Please save the downloaded model in bioKGQA/model.
+
 Note: If the Codellama downloaded from the official website cannot be used directly, you can complete the conversion according to the following steps.
 
 1、In the downloaded folder, such as CodeLlama-13b Instrument, create a new folder 13d_hf.
