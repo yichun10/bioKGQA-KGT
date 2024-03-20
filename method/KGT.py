@@ -1,25 +1,16 @@
 import networkx as nx  
-from transformers import AutoTokenizer
-import transformers
 import torch
 from tqdm import tqdm
 import json
 import re
 from transformers import AutoModel, AutoTokenizer, pipeline
 from py2neo import Node, Graph, Relationship,NodeMatcher
-from transformers import BertTokenizer, BertModel
 import pandas as pd
 from scipy.spatial.distance import cosine
 dataset = []
-"""
-{
-    "question":,
-    "answer":
-}
-"""
-link1 = Graph("address", auth=("neo4j", "key"))# KG information
-
-model1 = "" #model route
+link1 = Graph("address", auth=("neo4j", "password"))# KG information.
+file_path = './dataset/SOKG.json'  # Replace with your test JSON file path
+model1 = "./model/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
 tokenizer = AutoTokenizer.from_pretrained(model1)
 pipeline1 = transformers.pipeline(
     "text-generation",
@@ -72,7 +63,6 @@ def exception_(old_question):
     )
 
 # Read JSON file
-file_path = ''  # Replace with your test JSON file path
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)
 for item in tqdm(data):
