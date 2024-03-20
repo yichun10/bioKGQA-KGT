@@ -2,6 +2,7 @@ import networkx as nx
 import torch
 from tqdm import tqdm
 import json
+import transformers
 import re
 from transformers import AutoModel, AutoTokenizer, pipeline
 from py2neo import Node, Graph, Relationship,NodeMatcher
