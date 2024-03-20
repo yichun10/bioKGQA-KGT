@@ -11,6 +11,16 @@ the types of the head and tail entities into the graph schema of the knowledge g
 chain pattern. (C) Subgraph construction. Generate a query statement and retrieve the subgraph. (D) Inference. Complete the final reasoning and
 output the results in natural language.
 
+## Demo
+You can see our demo through the following video.
+Due to limited resources, we do not currently provide online demos. If you need an online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
+
+## Environments Setting
+1、In a conda env with PyTorch / CUDA available clone and download this repository.
+2、In the top-level directory run:
+```bash
+pip install
+```
 ## Installation
 * CUDA>=11.3, Python>=3.8
 * GPU Requirements: Two V100 cards
