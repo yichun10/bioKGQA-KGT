@@ -31,7 +31,7 @@ You can obtain the SOKG_dataset.json from the dataset folder, which is a dataset
 You can download the corresponding model from the official website. For instance, if you need to download CodeLlama, you can visit the link [](https://github.com/facebookresearch/codellama.git)https://github.com/facebookresearch/codellama.git.
 You can also visit the link below to download llama2:
 https://huggingface.co/meta-llama
-
+Please save the downloaded model in bioKGQA/model.
 ### Quick Start
 You can directly run the following code to complete basic inference.
 ```bash
@@ -87,7 +87,7 @@ Note: If the Codellama downloaded from the official website cannot be used direc
 1、In the downloaded folder, such as CodeLlama-13b Instrument, create a new folder 13d_hf.
 2、Run the following code directly.
 ```bash
-python /play/codellama/convert_llama_weights_to_hf.py --input_dir /KGT/model/codellama/CodeLlama-13b-Instruct --model_size 13B --output_dir /KGT/model/codellama/CodeLlama-13b-Instruct/13b_hf
+python /bioKGQA/Tools/convert_llama_weights_to_hf.py --input_dir /bioKGQA/model/CodeLlama-13b-Instruct --model_size 13B --output_dir /bioKGQA/model/CodeLlama-13b-Instruct/13b_hf
 ```
 ### Evaluation
 We have designed three evaluation methods: ROUGE, BERT score, and an evaluator based on GPT-4. You simply need to enter the paths for the test set and the path for the generated answers in the corresponding fields to run it directly.
