@@ -17,13 +17,11 @@ Due to limited resources, we do not currently provide online demos. If you need 
 
 ## Environments Setting
 1、In a conda env with PyTorch / CUDA available clone and download this repository.
+
 2、In the top-level directory run:
 ```bash
-pip install
+pip install -r requirements.txt
 ```
-## Installation
-* CUDA>=11.3, Python>=3.8
-* GPU Requirements: Two V100 cards
 
 ## Usage
 ### Data preparation
@@ -31,7 +29,49 @@ You can obtain the SOKG_dataset.json from the dataset folder, which is a dataset
 
 ### Downloading the Required LLMs
 You can download the corresponding model from the official website. For instance, if you need to download CodeLlama, you can visit the link [](https://github.com/facebookresearch/codellama.git)https://github.com/facebookresearch/codellama.git.
-### Test
+You can also visit the link below to download llama2:
+https://huggingface.co/meta-llama
+
+### Quick Start
+You can directly run the following code to complete basic inference.
+```bash
+import torch
+from transformers import AutoModel, AutoTokenizer, pipeline
+
+model1 = "/play/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
+tokenizer = AutoTokenizer.from_pretrained(model1)
+pipeline1 = transformers.pipeline(
+    "text-generation",
+    model=model1,
+    torch_dtype=torch.float16,
+    device_map="auto", 
+)
+question = "" #Enter your question
+prompt = """
+You are a reasoning robot, and you need to perform the following two steps step by step: 1. Answer my question using natural language. 2.Translate all answers into English.
+"""
+input_text1 = prompt+question
+sequences = pipeline1(
+    input_text1,
+    do_sample=True,
+    top_k=10,
+    return_full_text=False,
+    top_p = 0.7,  
+    temperature = 0.1,
+    num_return_sequences=1,
+    eos_token_id=tokenizer.eos_token_id,
+    max_length=1000, 
+)
+for seq in sequences:
+    lines = seq['generated_text'].split('\n')
+    for line in lines:
+        if line.strip(): 
+            out=line
+            break  
+print(out)
+```
+
+### KGT Test
 You can obtain the KGT.py from the method folder.
 ```bash
 link1 = Graph("address", auth=("neo4j", "key"))
