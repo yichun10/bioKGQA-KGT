@@ -74,11 +74,21 @@ print(out)
 ### KGT Test
 You can obtain the KGT.py from the method folder.
 ```bash
-link1 = Graph("address", auth=("neo4j", "key"))
-model1 = ""
-file_path = '' 
+link1 = Graph("address", auth=("neo4j", "password"))# KG information.
+file_path = './dataset/SOKG.json'  # Replace with your test JSON file path
+model1 = "./model/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
 ```
-Enter the Knowledge Graph API, download paths for the LLM and dataset, and you can directly run the KGT.py.
+After filling in the above information, run the KGT.py directly in the terminal of the main folder.
+```bash
+python method/KGT.py
+```
+Note: If you have not filled in the correct knowledge graph address and password, you may receive an error message.For access to the SmartQuerier Oncology Knowledge Graph, please contact at service@smartquerier.com.
+Note: If the Codellama downloaded from the official website cannot be used directly, you can complete the conversion according to the following steps.
+1、In the downloaded folder, such as CodeLlama-13b Instrument, create a new folder 13d_hf.
+2、Run the following code directly.
+```bash
+python /play/codellama/convert_llama_weights_to_hf.py --input_dir /KGT/model/codellama/CodeLlama-13b-Instruct --model_size 13B --output_dir /KGT/model/codellama/CodeLlama-13b-Instruct/13b_hf
+```
 ### Evaluation
 We have designed three evaluation methods: ROUGE, BERT score, and an evaluator based on GPT-4. You simply need to enter the paths for the test set and the path for the generated answers in the corresponding fields to run it directly.
 ```bash
