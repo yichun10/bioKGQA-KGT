@@ -83,8 +83,11 @@ After filling in the above information, run the KGT.py directly in the terminal 
 python method/KGT.py
 ```
 Note: If you have not filled in the correct knowledge graph address and password, you may receive an error message.For access to the SmartQuerier Oncology Knowledge Graph, please contact at service@smartquerier.com.
+
 Note: If the Codellama downloaded from the official website cannot be used directly, you can complete the conversion according to the following steps.
+
 1、In the downloaded folder, such as CodeLlama-13b Instrument, create a new folder 13d_hf.
+
 2、Run the following code directly.
 ```bash
 python /bioKGQA/Tools/convert_llama_weights_to_hf.py --input_dir /bioKGQA/model/CodeLlama-13b-Instruct --model_size 13B --output_dir /bioKGQA/model/CodeLlama-13b-Instruct/13b_hf
@@ -92,10 +95,10 @@ python /bioKGQA/Tools/convert_llama_weights_to_hf.py --input_dir /bioKGQA/model/
 ### Evaluation
 We have designed three evaluation methods: ROUGE, BERT score, and an evaluator based on GPT-4. You simply need to enter the paths for the test set and the path for the generated answers in the corresponding fields to run it directly.
 ```bash
-with open('/your_path/test.json', 'r') as file:
+with open('/bioKBQA/answer/codellama13_SOKG.json', 'r') as file:
     test_datas = json.load(file)
 
-with open('/your_path/QA.json', 'r') as file:
+with open('/bioKBQA/dataset/SOKG.json', 'r') as file:
     data = json.load(file)
 
 ```
