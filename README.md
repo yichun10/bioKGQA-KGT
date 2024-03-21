@@ -42,6 +42,11 @@ Note: If the Codellama downloaded from the official website cannot be used direc
 ```bash
 python /bioKGQA/Tools/convert_llama_weights_to_hf.py --input_dir /bioKGQA/model/CodeLlama-13b-Instruct --model_size 13B --output_dir /bioKGQA/model/CodeLlama-13b-Instruct/13b_hf
 ```
+The download addresses for some LLMs are as follows:
+
+Zephyr-7b: https://huggingface.co/HuggingFaceH4/zephyr-7b-beta/tree/main
+
+Taiyi: https://huggingface.co/DUTIR-BioNLP/Taiyi-LLM/tree/main
 ### Quick Start
 You can directly run the following code to complete basic inference.
 ```bash
