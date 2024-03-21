@@ -737,7 +737,7 @@
     },
     {
         "question": "With which cancers is the prognosis related to FGFR4?",
-        "answer": "Output: The prognosis of FGFR4 is related to the following cancers: 胶质母细胞瘤."
+        "answer": "Output: The prognosis of FGFR4 is related to the following cancers: glioblastoma."
     },
     {
         "question": "How does EGFR gene mutation affect the efficacy of osimertinib?",
@@ -785,7 +785,7 @@
     },
     {
         "question": "Which genetic mutations may be related to the potential resistance of crizotinib?",
-        "answer": "    Output: The SNVfull related to potential resistance of crizotinib (克唑替尼) is ALK-p.L1196M."
+        "answer": "    Output: The SNVfull related to potential resistance of crizotinib is ALK-p.L1196M."
     },
     {
         "question": "Which genetic mutations need to be tested for dasatinib?",
