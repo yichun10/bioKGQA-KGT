@@ -9,4 +9,4 @@ Taiyi: https://huggingface.co/DUTIR-BioNLP/Taiyi-LLM/tree/main
 
 llama2: https://huggingface.co/meta-llama
 
-codellama: https://github.com/facebookresearch/codellama.git
+codellama: https://huggingface.co/codellama/CodeLlama-13b-Instruct-hf/tree/main
