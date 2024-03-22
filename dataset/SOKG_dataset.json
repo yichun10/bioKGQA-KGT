@@ -5,7 +5,7 @@
     },
     {
         "question": "What drugs can treat cancers with TERT mutations?",
-        "answer": "Output: TERT can be inhibited by doxorubicin."
+        "answer": "Output: Cancers with TERT mutations can be inhibited by doxorubicin."
     },
     {
         "question": "What types of cancer can be treated with diethylstilbestrol?",
@@ -41,11 +41,11 @@
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with TNKS mutations?",
-        "answer": "        Output: The NMPA-approved drugs for TNKS are: NO."
+        "answer": "Output: There is no NMPA-approved drugs that can treat cancers with TNKS mutations."
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with DDR2 mutations?",
-        "answer": "Output: The NMPA-approved drugs for DDR2 are: belvarafenib, merestinib, lucitanib, sitravatinib, bafetinib."
+        "answer": "Output: The NMPA-approved drugs for DDR2 are belvarafenib, merestinib, lucitanib, sitravatinib, bafetinib."
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with MGMT mutations?",
@@ -53,7 +53,7 @@
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with HDAC4 mutations?",
-        "answer": "Output: The NMPA-approved drugs for HDAC4 are: panobinostat, belinostat, and abexinostat."
+        "answer": "Output: The NMPA-approved drugs for HDAC4 are panobinostat, belinostat, and abexinostat."
     },
     {
         "question": "What FDA-approved drugs are available to treat cancers with BCL2L1 mutations?",
@@ -61,23 +61,23 @@
     },
     {
         "question": "What FDA-approved drugs are available to treat cancers with GPNMB mutations?",
-        "answer": "Output: GPNMB is associated with glembatumumab vedotin."
+        "answer": "Output: Glembatumumab vedotin is available to treat cancers with GPNMB mutations."
     },
     {
         "question": "What FDA-approved drugs are available to treat cancers with CD3E mutations?",
-        "answer": "        Output: The following FDA-approved drugs have CD3E: emirodatamab, pavurutamab, pasotuxizumab, nivatrotamab, eluvixtamab."
+        "answer": "        Output: The following FDA-approved drugs can treat cancers with CD3E mutations: emirodatamab, pavurutamab, pasotuxizumab, nivatrotamab, eluvixtamab."
     },
     {
         "question": "What genetic mutations are present in astrocytoma?",
-        "answer": "        Output: Astrocytoma can be caused by the following SNVs: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "        Output: Astrocytoma can be caused by the following genetic mutations: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What genetic mutations are present in endocervical adenocarcinoma?",
-        "answer": "        Output: The snvfull in endocervical adenocarcinoma are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, and ALK-p.L1198F."
+        "answer": "        Output: The genetic mutations in endocervical adenocarcinoma are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, and ALK-p.L1198F."
     },
     {
         "question": "What genetic mutations are present in adenoid cystic carcinoma?",
-        "answer": "Output: Adenoid cystic carcinoma can be caused by the following variants: ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ERBB2-p.E401G, MET-p.L1195V, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F."
+        "answer": "Output: Adenoid cystic carcinoma can be caused by the following genetic mutations: ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ERBB2-p.E401G, MET-p.L1195V, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F."
     },
     {
         "question": "What type of cancer can be driven by PTEN-p.R173C?",
@@ -101,7 +101,7 @@
     },
     {
         "question": "What FDA-approved drugs are available to treat cancers with GSK3B mutations?",
-        "answer": "Output: The following FDA-approved drugs are associated with GSK3B: elraglusib, CHIR99021, GS87, LY2090314, PBA2."
+        "answer": "Output: The following FDA-approved drugs can treat cancers with GSK3B mutations: elraglusib, CHIR99021, GS87, LY2090314, PBA2."
     },
     {
         "question": "What genetic mutations are present in nipple neoplasms?",
@@ -136,19 +136,19 @@
         "answer": "Output: CNC is related to the following cancers: renal cell carcinoma, urothelial carcinoma, and uveal melanoma."
     },
     {
-        "question": "Which drugs are resistant to FLT3 in myeloid?",
+        "question": "Which drugs are FLT3 in myeloid resistant to?",
         "answer": "Output: FLT3 in myeloid is resistant to sorafenib."
     },
     {
-        "question": "Which drugs are resistant to EGFR in pleomorphic carcinoma of the lung?",
+        "question": "Which drugs are EGFR in pleomorphic carcinoma of the lung resistant to?",
         "answer": "Output: EGFR in pleomorphic carcinoma of the lung is resistant to osi-ertinib."
     },
     {
-        "question": "Which drugs are resistant to colon adenocarcinoma with NTRK1?",
+        "question": "Which drugs are colon adenocarcinoma with NTRK1 resistant to?",
         "answer": "Output: NTRK1-colon adenocarcinoma are resistant to encorafenib."
     },
     {
-        "question": "Which drugs are resistant to KIT in soft tissue?",
+        "question": "Which drugs are KIT in soft tissue resistant to?",
         "answer": "    Output: KIT in soft tissue is resistant to avapritinib."
     },
     {
@@ -161,23 +161,23 @@
     },
     {
         "question": "How to treat gastric cancer with ERBB2?",
-        "answer": "Output: Gastric cancer with ERBB2 can be treated with the following drugs: KN026."
+        "answer": "Output: Gastric cancer with ERBB2 can be treated with KN026."
     },
     {
         "question": "What are the drug treatment options for fallopian tube carcinoma?",
         "answer": "Output: Fallopian tube carcinoma can be treated with the following drugs: olaparib, niraparib, rucaparib, mirvetuximab soravtansine, and cabazitaxel."
     },
     {
-        "question": "Which genetic mutations are possibly related to resistance to sorafenib?",
-        "answer": "    Output: Sorafenib is possibly related to the following snvfull: BRAF-p.G469V, BRAF-p.G469R, and RET-p.M918T."
+        "question": "Which gene mutations may be resistant to sorafenib?",
+        "answer": "    Output: The mutated genes below may be resistant to sorafenib: BRAF-p.G469V, BRAF-p.G469R, and RET-p.M918T."
     },
     {
         "question": "How to treat bone with NTRK1?",
-        "answer": "        Output: NTRK1 can be treated with the following drugs: danusertib, belizatinib, SIM-89,taletrectinib, Lalotinib, VMD-928, GTx-186, BMS-754807, Enritinib, repotrectinib."
+        "answer": "        Output: bone with NTRK1 can be treated with the following drugs: danusertib, belizatinib, SIM-89,taletrectinib, Lalotinib, VMD-928, GTx-186, BMS-754807, Enritinib, repotrectinib."
     },
     {
         "question": "Which genetic mutations need to be detected by FIIN-1?",
-        "answer": "    Output:FIIN-1 needs to detect the following SNVfulls: FGFR1-p.M128T, FGFR1-p.E29K, FGFR1-p.R488S, FGFR1-p.L33F, FGFR1-p.T698M, FGFR1-p.S690G, FGFR1-p.Q337H, FGFR1-p.P580R, FGFR1-p.K632N, and FGFR1-p.T15K."
+        "answer": "    Output:FIIN-1 needs to detect the following genetic mutations: FGFR1-p.M128T, FGFR1-p.E29K, FGFR1-p.R488S, FGFR1-p.L33F, FGFR1-p.T698M, FGFR1-p.S690G, FGFR1-p.Q337H, FGFR1-p.P580R, FGFR1-p.K632N, and FGFR1-p.T15K."
     },
     {
         "question": "What are the drug treatment options for bladder urothelial carcinoma?",
@@ -185,23 +185,23 @@
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to afatinib?",
-        "answer": "    Output: The following snvfulls are possibly related to sensitivity to afatinib: EGFR-p.L858R, EGFR-p.L861R, EGFR-p.R776G, EGFR-p.E746_L747delinsIP, and EGFR-p.S1190F."
+        "answer": "    Output: The following genetic mutations are possibly related to sensitivity to afatinib: EGFR-p.L858R, EGFR-p.L861R, EGFR-p.R776G, EGFR-p.E746_L747delinsIP, and EGFR-p.S1190F."
     },
     {
         "question": "Which genetic mutations need to be detected for MK-2206?",
-        "answer": "Output:To detect the SNVFull for MK-2206, AKT1 and its variants need to be tested, including AKT1-p.S2R, AKT1-p.A304T, AKT1-p.F469L, AKT1-p.A476S, AKT1-p.R76S, AKT1-p.S129L, AKT1-p.Q352R, AKT1-p.P68S, AKT1-p.P125S, and AKT1-p.K111N."
+        "answer": "Output:To detect the genetic mutations for MK-2206, AKT1 and its variants need to be tested, including AKT1-p.S2R, AKT1-p.A304T, AKT1-p.F469L, AKT1-p.A476S, AKT1-p.R76S, AKT1-p.S129L, AKT1-p.Q352R, AKT1-p.P68S, AKT1-p.P125S, and AKT1-p.K111N."
     },
     {
         "question": "What are the genetic mutations in pancreas?",
-        "answer": "Output: The snvfull in pancreas are: ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, ALK-p.G1202R, JAK2-p.V617F, FLT3-p.D835Y."
+        "answer": "Output: The genetic mutations in pancreas are ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, ALK-p.G1202R, JAK2-p.V617F, FLT3-p.D835Y."
     },
     {
         "question": "What drugs can treat cancers with MTOR mutations?",
-        "answer": "        Output: MTOR can be inhibited by the following drugs: PP-121, AZD-8055, detorsertib, ABI-009, CC-223, apitolisib, Itraconazole, ABTL0812, and antroquinonol."
+        "answer": "        Output: cancers with MTOR mutations can be inhibited by the following drugs: PP-121, AZD-8055, detorsertib, ABI-009, CC-223, apitolisib, Itraconazole, ABTL0812, and antroquinonol."
     },
     {
         "question": "What are the genetic mutations in esophageal carcinoma?",
-        "answer": "Output: The snvfull in esophageal carcinoma are ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
+        "answer": "Output: The genetic mutations in esophageal carcinoma are ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
     },
     {
         "question": "What types of cancer can sotorasib treat?",
@@ -224,24 +224,24 @@
         "answer": "Output: Bortezomib can be used to treat multiple myeloma, MCL, and osteosarcoma."
     },
     {
-        "question": "Which drugs are resistant to ALK in giant cell carcinoma of the lung?",
+        "question": "Which drugs are ALK in giant cell carcinoma of the lung resistant to?",
         "answer": "Output: ALK in giant cell carcinoma of the lung are resistant to clotozantinib and lenvatinib."
     },
     {
         "question": "What drugs can treat cancers with ALK mutations?",
-        "answer": "        Output: ALK can be treated with the following drugs: belizatinib, ensatinib, XZP-3621, CEP-28122, RF-A089, X-376, PLB1003, TAE684, TPX-0131, irouak."
+        "answer": "        Output: cancers with ALK mutations can be treated with the following drugs: belizatinib, ensatinib, XZP-3621, CEP-28122, RF-A089, X-376, PLB1003, TAE684, TPX-0131, irouak."
     },
     {
         "question": "What are the genetic mutations in liver?",
-        "answer": "Output: The snvfull in liver are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: The genetic mutations in liver are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "Which genetic mutations need to be detected for thyroid?",
-        "answer": "Output: The following snvfull need to be detected for thyroid: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: The following genetic mutations need to be detected for thyroid: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What are the genetic mutations in cervix?",
-        "answer": "Output: The snvfull in cervix are: ALK-p.L1196M, ALK-p.L1198F, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
+        "answer": "Output: The genetic mutations in cervix are ALK-p.L1196M, ALK-p.L1198F, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
     },
     {
         "question": "What disease does a mutation in the MYH8 gene cause?",
@@ -265,7 +265,7 @@
     },
     {
         "question": "What disease does a PALB2 gene mutation cause?",
-        "answer": "Output: A PALB2 gene mutation is associated with familial breast cancer and pancreatic cancer. The related cancers include breast cancer (in males and females) and pancreatic cancer."
+        "answer": "Output: A PALB2 gene mutation is associated with familial breast cancer and pancreatic cancer. "
     },
     {
         "question": "What are the fusion genes in skin?",
@@ -289,7 +289,7 @@
     },
     {
         "question": "What are the fusion genes in inflammatory myofibroblastic tumor?",
-        "answer": "        Output: The fusion in inflammatory myofibroblastic tumor is ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ALK-p.C1156Y, FGFR2-SKI, FGFR3-TACC3, FGFR2-TACC3, FGFR2-CLIP1, and FGFR2-SHTN1."
+        "answer": "        Output: The fusion genes in inflammatory myofibroblastic tumor is ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ALK-p.C1156Y, FGFR2-SKI, FGFR3-TACC3, FGFR2-TACC3, FGFR2-CLIP1, and FGFR2-SHTN1."
     },
     {
         "question": "What are the fusion genes in soft tissue?",
@@ -300,7 +300,7 @@
         "answer": "Output: Trismus-Pseudocamptodactyly Syndrome with Cardiac Myxoma and Freckling can induce heart muscle tumors."
     },
     {
-        "question": "Which drugs are sensitive to KRAS in colon cancer?",
+        "question": "Which drugs are KRAS in colon cancer sensitive to?",
         "answer": "Output: KRAS in colon cancer are sensitive to cetuximab."
     },
     {
@@ -312,7 +312,7 @@
         "answer": "        Output: The clinical trial recruiting prostate patients is recruiting both male and female patients."
     },
     {
-        "question": "Which drugs are sensitivity to ALK in basaloid large cell carcinoma of the lung?",
+        "question": "Which drugs are ALK in basaloid large cell carcinoma of the lung sensitivity to?",
         "answer": "Output: ALK in basaloid large cell carcinoma of the lung is sensitivity to alirocumab, ganetespib, and lenvatinib."
     },
     {
@@ -321,7 +321,7 @@
     },
     {
         "question": "What drugs are available for cancers with ERBB2 mutations?",
-        "answer": "        Output: The following drugs are available for ERBB2 mutations: cabozantinib, voronib, lenvatinib, nivolumab, pembrolizumab, ipilimumab, acitinib, tivozanib, temsirolimus, and tigafur."
+        "answer": "        Output: The following drugs are available for cancers with ERBB2 mutations: cabozantinib, voronib, lenvatinib, nivolumab, pembrolizumab, ipilimumab, acitinib, tivozanib, temsirolimus, and tigafur."
     },
     {
         "question": "Are there suitable and currently recruiting clinical trials for non-small cell lung cancer patients?",
@@ -337,27 +337,27 @@
     },
     {
         "question": "What are the genetic mutations in ovarian carcinoma?",
-        "answer": "        Output: Ovarian carcinoma can be caused by the following SNVs: ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
+        "answer": "        Output: Ovarian carcinoma can be caused by the following genetic mutations: ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
     },
     {
         "question": "What are the genetic mutations in kidney?",
-        "answer": "Output: The snvfull in kidney are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: The genetic mutations in kidney are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What are the mutations in endometrial carcinoma?",
-        "answer": "        Output: Endometrial carcinoma can be caused by the following mutations: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-skipping_mut, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "        Output: Endometrial carcinoma can be caused by the following genetic mutations: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-skipping_mut, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What are the genetic mutations in small cell lung cancer?",
-        "answer": "Output: Small cell lung cancer can be caused by the following variants: ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
+        "answer": "Output: Small cell lung cancer can be caused by the following genetic mutations: ALK-p.L1196M, ALK-p.L1198F, MET-skipping_mut, MET-p.D1228N, CSF1R-p.Y546_K551del, CSF1R-p.W450_E456del, JAK2-p.V617F, FLT3-p.D835Y, ALK-p.G1202R."
     },
     {
         "question": "What are the genetic mutations in liver?",
-        "answer": "Output: Liver can be caused by the following snvfull: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: Liver can be caused by the following genetic mutations: EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What are the genetic mutations in breast?",
-        "answer": "Output: The snvfull in breast are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: The genetic mutations in breast are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What is the minimum age for recruitment in clinical trials for small bowel cancer patients?",
@@ -377,11 +377,11 @@
     },
     {
         "question": "What are the drug treatment options for esophageal squamous cell carcinoma?",
-        "answer": "Output: The drug treatment options for esophageal squamous cell carcinoma include immunotherapy drugs such as sintilimab, camrelizumab, tislelizumab, and toripalimab."
+        "answer": "Output: The drug treatment options for esophageal squamous cell carcinoma include sintilimab, camrelizumab, tislelizumab, and toripalimab."
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to debio 1347?",
-        "answer": "    Output: The following snvfull are possibly related to sensitivity to debio 1347: FGFR2-p.H167_N173del."
+        "answer": "    Output: The following genetic mutations are possibly related to sensitivity to debio 1347: FGFR2-p.H167_N173del."
     },
     {
         "question": "What is the maximum age for recruitment of oral carcinoma patients in clinical trials?",
@@ -389,11 +389,11 @@
     },
     {
         "question": "What is the gender of the clinical trial recruiting patients with renal medullary carcinoma?",
-        "answer": "        Output: The gender of the clinical trial recruiting patients with renal medullary carcinoma is both."
+        "answer": "        Output: The gender of the clinical trial recruiting patients with renal medullary carcinoma is both male and female."
     },
     {
         "question": "What is the gender of the clinical trial recruiting patients with lung adenosquamous carcinoma?",
-        "answer": "        Output: The gender of the clinical trial recruiting patients with lung adenosquamous carcinoma is both."
+        "answer": "        Output: The gender of the clinical trial recruiting patients with lung adenosquamous carcinoma is both male and female."
     },
     {
         "question": "What is the gender of the clinical trial participants recruited for pancreas?",
@@ -405,15 +405,15 @@
     },
     {
         "question": "What is the gender of the clinical trial recruiting peritoneum patients?",
-        "answer": "        Output: The gender of the clinical trial recruiting peritoneum patients is both."
+        "answer": "        Output: The gender of the clinical trial recruiting peritoneum patients is both male and female."
     },
     {
         "question": "What FDA-approved drugs target cancers with ERBB2 mutations?",
-        "answer": "    Output: FDA-approved drugs targeting ERBB2 mutations include gefitinib and fam-trastuzumab deruxtecan-nxki."
+        "answer": "    Output: FDA-approved drugs targeting cancers with ERBB2 mutations include gefitinib and fam-trastuzumab deruxtecan-nxki."
     },
     {
         "question": "What FDA-approved drugs target cancers with PSMC5 mutations?",
-        "answer": "Output: Both carfilzomib and bortezomib inhibit PSMC5 mutations."
+        "answer": "Output: Carfilzomib and bortezomib inhibit PSMC5 mutations."
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with AR mutation?",
@@ -421,15 +421,15 @@
     },
     {
         "question": "What are the targeted drugs for cancers with PIK3CA mutation?",
-        "answer": "        Output: PIK3CA mutation can be targeted by the following drugs: apitolisib, SRX3207, HS-10352, rigosertib, VS-5584, Deguelin, pictilisib, AMG 511, WX-037, and SF1126."
+        "answer": "        Output: Cancers with PIK3CA mutation mutation can be targeted by the following drugs: apitolisib, SRX3207, HS-10352, rigosertib, VS-5584, Deguelin, pictilisib, AMG 511, WX-037, and SF1126."
     },
     {
         "question": "What are the targeted drugs for cancers with TP53 mutation?",
-        "answer": "Output: The targeted drugs for TP53 mutation is AMGMDS3."
+        "answer": "Output: The targeted drugs for cancers with TP53 mutation is AMGMDS3."
     },
     {
         "question": "What are the NMPA-approved drugs for cancers with IDH1 mutation?",
-        "answer": "        Output: The NMPA-approved drugs for IDH1 mutation are: avonib."
+        "answer": "        Output: The NMPA-approved drugs for cancers with IDH1 mutation is avonib."
     },
     {
         "question": "What NMPA-approved drugs are available for cancers with EGFR mutations?",
@@ -449,11 +449,11 @@
     },
     {
         "question": "What genetic diseases may be caused by cancers with SLC37A4?",
-        "answer": "Output: SLC37A4 may cause the following genetic diseases: Type IB glycogen storage."
+        "answer": "Output: SLC37A4 may cause Type IB glycogen storage."
     },
     {
         "question": "What genetic diseases can be caused by cancers with PKD1 mutations?",
-        "answer": "Output: PKD1 mutations can cause the following genetic diseases: polycystic kidney disease 1."
+        "answer": "Output: PKD1 mutations can cause polycystic kidney disease 1."
     },
     {
         "question": "Is there a strong association between BRCA1 gene mutation and ovarian carcinoma?",
@@ -520,19 +520,19 @@
         "answer": "Output: The ERCC2 gene is associated with the following diseases: xeroderma pigmentosum."
     },
     {
-        "question": "Which drugs show resistance to ERBB2-p.D769Y?",
-        "answer": "    Output: The drug Nalatinib shows resistance to ERBB2-p.D769Y"
+        "question": "Which drugs are ERBB2-p.D769Y resistance to?",
+        "answer": "    Output: ERBB2-p.D769Y is resistance to Nalatinib."
     },
     {
-        "question": "Which drugs are sensitive to EGFR-p.G719A mutation?",
-        "answer": "   Output: The drug sensitive to EGFR-p.G719A mutation is afatinib"
+        "question": "Which drugs are EGFR-p.G719A mutation sensitive to?",
+        "answer": "   Output: EGFR-p.G719A mutation is sensitive to afatinib"
     },
     {
         "question": "Which drug does cancers with ALK-p.I1171T show resistance to?",
         "answer": "    Output: ALK-p.I1171T shows resistance to alectinib in various types of lung cancer including poorly differentiated non-small cell lung cancer, lung sarcomatoid carcinoma, lung adenocarcinoma, giant cell lung cancer, lung mucoepidermoid carcinoma, large cell lung cancer, lung squamous cell carcinoma, non-squamous non-small cell lung cancer, and lung adenosquamous carcinoma."
     },
     {
-        "question": "Which drugs are resistant to cancers with NTRK3-p.G623R?",
+        "question": "Which drugs are cancers with NTRK3-p.G623R resistant to?",
         "answer": "Output: NTRK3-p.G623R is resistant to encorafenib."
     },
     {
@@ -552,12 +552,12 @@
         "answer": "Output: Avelumab can be used to treat Merkel cell carcinoma, renal cell carcinoma, and urothelial carcinoma."
     },
     {
-        "question": "What types of cancer can proleukin treat?",
+        "question": "What types of cancer can be treated with proleukin?",
         "answer": "Output: Proleukin can treat renal cell carcinoma and melanoma."
     },
     {
         "question": "What are the fusion genes in alveolar rhabdomyosarcoma?",
-        "answer": "        Output: Alveolar rhabdomyosarcoma can be caused by the following fusion genes: ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ALK-p.C1156Y, FGFR2-SKI, FGFR3-TACC3, FGFR2-TACC3, FGFR2-CLIP1, and FGFR2-SHTN1."
+        "answer": "        Output: Alveolar rhabdomyosarcoma contains the following fusion genes: ALK-p.L1196M, ALK-p.L1198F, ALK-p.G1202R, ALK-p.C1156Y, FGFR2-SKI, FGFR3-TACC3, FGFR2-TACC3, FGFR2-CLIP1, and FGFR2-SHTN1."
     },
     {
         "question": "What is the relationship between FGFR3 and the ponatinib?",
@@ -597,7 +597,7 @@
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to alectinib?",
-        "answer": "    Output: The following snvfull are possibly related to sensitivity to alectinib: ALK-p.G1269A."
+        "answer": "    Output: ALK-p.G1269A is related to sensitivity to alectinib."
     },
     {
         "question": "What are the drug treatment options for ovarian carcinoma?",
@@ -605,7 +605,7 @@
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to sorafenib?",
-        "answer": "    Output: The following snvfull are possibly related to sensitivity to sorafenib: BRAF-p.G469R, BRAF-p.G469V, RET-p.M918T."
+        "answer": "    Output: The following genetic mutations are possibly related to sensitivity to sorafenib: BRAF-p.G469R, BRAF-p.G469V, RET-p.M918T."
     },
     {
         "question": "What types of cancer can be treated with everolimus?",
@@ -617,7 +617,7 @@
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to pazopanib?",
-        "answer": "    Output: Pazopanib is possibly related to the following snvfull: FGFR2-p.F276C, FGFR2-p.P253R, FGFR3-p.S249C."
+        "answer": "    Output: Pazopanib is possibly related to the following genetic mutations: FGFR2-p.F276C, FGFR2-p.P253R, FGFR3-p.S249C."
     },
     {
         "question": "What is the relationship between PDGFRA and the dasatinib?",
@@ -645,15 +645,15 @@
     },
     {
         "question": "What genetic mutations need to be tested for gefitinib?",
-        "answer": "    Output: Gefitinib needs to be tested for the following snvfull: EGFR-p.I759M, EGFR-p.L858R, EGFR-p.E709V."
+        "answer": "    Output: Gefitinib needs to be tested for the following genetic mutations: EGFR-p.I759M, EGFR-p.L858R, EGFR-p.E709V."
     },
     {
         "question": "Which genetic mutations need to be tested for brigatinib?",
-        "answer": "    Output: Brigatinib is sensitive to the following snvfull: ALK-p.V1180L."
+        "answer": "    Output: ALK-p.V1180L need to be tested for brigatinib."
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to dacomitinib?",
-        "answer": "       Output: The following snvfull are possibly related to sensitivity to dacomitinib: EGFR-p.E709_T710delinsD."
+        "answer": "       Output: EGFR-p.E709_T710delinsD is possibly related to sensitivity to dacomitinib."
     },
     {
         "question": "What types of cancer can be treated by dtie?",
@@ -673,15 +673,15 @@
     },
     {
         "question": "Which types of cancer can be driven by cancers with E3B1 mutations?",
-        "answer": "Output: E3B1 can drive the following types of cancer: esophageal cancer."
+        "answer": "Output: E3B1 can drive esophageal cancer."
     },
     {
         "question": "Which cancers are related to the ABLBP4?",
-        "answer": "Output: The following cancers are related to ABLBP4: gastric cancer."
+        "answer": "Output: Gastric cancer is related to ABLBP4: gastric cancer."
     },
     {
         "question": "What are the genetic mutations in lung adenocarcinoma?",
-        "answer": "        Output: The snvfull in lung adenocarcinoma are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "        Output: The genetic mutations in lung adenocarcinoma are EGFR-p.L861R, EGFR-p.G719A, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "Which drugs are related to the efficacy of BRAF?",
@@ -713,7 +713,7 @@
     },
     {
         "question": "Which genetic mutations may be related to the potential sensitivity of U3-1402?",
-        "answer": "Output: U3-1402 may be related to the following snvfulls: EGFR-p.T790M."
+        "answer": "Output: U3-1402 may be related to the following genetic mutations: EGFR-p.T790M."
     },
     {
         "question": "What is the relationship between BRCA2 gene mutation and the efficacy of talazoparib?",
@@ -737,7 +737,7 @@
     },
     {
         "question": "With which cancers is the prognosis related to FGFR4?",
-        "answer": "Output: The prognosis of FGFR4 is related to the following cancers: glioblastoma."
+        "answer": "Output: The prognosis of FGFR4 is related to glioblastoma."
     },
     {
         "question": "How does EGFR gene mutation affect the efficacy of osimertinib?",
@@ -769,7 +769,7 @@
     },
     {
         "question": "Which genetic mutations may be related to the potential resistance of palbociclib?",
-        "answer": "    Output: The SNVfull that may be related to potential resistance of palbociclib in breast cancer is RB1-p.H483Y."
+        "answer": "    Output:RB1-p.H483Y is related to potential resistance of palbociclib."
     },
     {
         "question": "What types of cancer is tamoxifen related to?",
@@ -777,7 +777,7 @@
     },
     {
         "question": "Which genetic mutations are related to sensitivity to vemurafenib?",
-        "answer": "        Output: The following snvfulls are related to sensitivity to vemurafenib: BRAF-p.V600E, BRAF-p.G596V."
+        "answer": "        Output: The following genetic mutations are related to sensitivity to vemurafenib: BRAF-p.V600E, BRAF-p.G596V."
     },
     {
         "question": "Which genetic mutations need to be tested for sunitinib?",
@@ -785,15 +785,15 @@
     },
     {
         "question": "Which genetic mutations may be related to the potential resistance of crizotinib?",
-        "answer": "    Output: The SNVfull related to potential resistance of crizotinib is ALK-p.L1196M."
+        "answer": "    Output: The genetic mutations related to potential resistance of crizotinib is ALK-p.L1196M."
     },
     {
         "question": "Which genetic mutations need to be tested for dasatinib?",
-        "answer": "Output: Dasatinib is sensitive to the following snvfulls: PDGFRA-p.D842V, BRAF-p.Y472C."
+        "answer": "Output: Dasatinib is sensitive to the following genetic mutations: PDGFRA-p.D842V, BRAF-p.Y472C."
     },
     {
         "question": "Which genetic mutations need to be tested for osimertinib?",
-        "answer": "Output: Osimertinib needs to be tested for the following snvfulls: EGFR-p.S768I, EGFR-p.V774M."
+        "answer": "Output: Osimertinib needs to be tested for the following genetic mutations: EGFR-p.S768I, EGFR-p.V774M."
     },
     {
         "question": "What types of cancer are the abiraterone related to?",
@@ -809,7 +809,7 @@
     },
     {
         "question": "Which genetic mutations are associated with liver?",
-        "answer": "Output: The following snvfulls are associated with liver: EGFR-p.G719A, EGFR-p.L861R, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
+        "answer": "Output: The following genetic mutations are associated with liver: EGFR-p.G719A, EGFR-p.L861R, ERBB2-p.E401G, ALK-p.L1196M, MET-p.L1195V, CSF1R-p.Y546_K551del, MET-p.D1228N, CSF1R-p.W450_E456del, JAK2-p.V617F, ALK-p.L1198F."
     },
     {
         "question": "What is the relationship between BRAF gene mutation and colon cancer?",
@@ -893,7 +893,7 @@
     },
     {
         "question": "How to treat cholangiocarcinoma carrying FGFR2?",
-        "answer": "Output: Cholangiocarcinoma carrying FGFR2 can be treated with the following drugs: debio 1347."
+        "answer": "Output: Cholangiocarcinoma carrying FGFR2 can be treated with debio 1347."
     },
     {
         "question": "How to treat uterus carrying NTRK1 fusion gene mutation?",
@@ -913,11 +913,11 @@
     },
     {
         "question": "Which genetic mutations need to be tested for ceritinib?",
-        "answer": "Output: The following snvfulls need to be tested for ceritinib: ALK-p.H1002R, ALK-p.G1402C, ALK-p.E766K, ALK-p.S413T, ALK-p.E1568D, ALK-p.A537G, ALK-p.N661I, ALK-p.Q453H, ALK-p.I725F, ALK-p.S237Y."
+        "answer": "Output: The following genetic mutations need to be tested for ceritinib: ALK-p.H1002R, ALK-p.G1402C, ALK-p.E766K, ALK-p.S413T, ALK-p.E1568D, ALK-p.A537G, ALK-p.N661I, ALK-p.Q453H, ALK-p.I725F, ALK-p.S237Y."
     },
     {
         "question": "Which genetic mutations are possibly related to sensitivity to dovitinib?",
-        "answer": "Output: The following snvfulls are possibly related to sensitivity to dovitinib: FGFR3-p.S249C."
+        "answer": "Output: FGFR3-p.S249C is possibly related to sensitivity to dovitinib."
     },
     {
         "question": "How does a RET gene mutation affect the efficacy of selpercatinib?",
@@ -925,7 +925,7 @@
     },
     {
         "question": "What genetic mutations need to be detected for zanidatamab?",
-        "answer": "        Output: Zanidatamab needs to be detected with the following snvfulls: ALK-p.F1245C."
+        "answer": "        Output: Zanidatamab needs to be detected with the following genetic mutations: ALK-p.F1245C."
     },
     {
         "question": "What types of cancer can be treated with carboplatin?",
@@ -945,11 +945,11 @@
     },
     {
         "question": "Which genetic mutations are related to potential resistance to trametinib?",
-        "answer": "Output: The SNVfulls related to potential resistance to trametinib are MAP2K1-p.L98_K104delinsQ in multiple myeloma, histiocytic and dendritic cell tumors, and myeloid neoplasms, as well as BRAF-p.N581S in non-small cell lung cancer and lung cancer, BRAF-p.G469V in kidney cancer, and BRAF-p.D594G in colon cancer, rectal cancer, and colorectal mucinous adenocarcinoma."
+        "answer": "Output: The genetic mutations related to potential resistance to trametinib are MAP2K1-p.L98_K104delinsQ in multiple myeloma, histiocytic and dendritic cell tumors, and myeloid neoplasms, as well as BRAF-p.N581S in non-small cell lung cancer and lung cancer, BRAF-p.G469V in kidney cancer, and BRAF-p.D594G in colon cancer, rectal cancer, and colorectal mucinous adenocarcinoma."
     },
     {
         "question": "Which genetic mutations are related to sensitivity to everolimus?",
-        "answer": "Output: The following snvfulls are related to sensitivity to everolimus: PIK3CA-p.W1051*, RET-p.M918T, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*."
+        "answer": "Output: The following genetic mutations are related to sensitivity to everolimus: PIK3CA-p.W1051*, RET-p.M918T, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*, PIK3CA-p.W1051*."
     },
     {
         "question": "How does EWSR1 affect the efficacy of seclidemstat?",
@@ -977,11 +977,11 @@
     },
     {
         "question": "Which genetic mutations need to be tested for afatinib?",
-        "answer": "        Output: The following snvfulls need to be tested for afatinib: EGFR-p.D807V, EGFR-p.A24S, EGFR-p.C240F, EGFR-p.Q1021K, EGFR-p.A750E, EGFR-p.R681K, EGFR-p.V60A, EGFR-p.G201C, EGFR-p.T382S, EGFR-p.V1011G."
+        "answer": "        Output: The following genetic mutations need to be tested for afatinib: EGFR-p.D807V, EGFR-p.A24S, EGFR-p.C240F, EGFR-p.Q1021K, EGFR-p.A750E, EGFR-p.R681K, EGFR-p.V60A, EGFR-p.G201C, EGFR-p.T382S, EGFR-p.V1011G."
     },
     {
         "question": "Which genetic mutations may be related to sensitivity to vemurafenib?",
-        "answer": "        Output: The following snvfulls may be related to sensitivity to vemurafenib: BRAF-p.V600E, BRAF-p.G596V."
+        "answer": "        Output: The following genetic mutations may be related to sensitivity to vemurafenib: BRAF-p.V600E, BRAF-p.G596V."
     },
     {
         "question": "What is the relationship between BRAF and panitumumab?",
@@ -1029,15 +1029,15 @@
     },
     {
         "question": "Which genetic mutations need to be tested for selumetinib?",
-        "answer": "Output: Selumetinib needs to be tested for the following snvfulls: BRAF-p.V600E, MAP2K1-p.Q56_V60del."
+        "answer": "Output: Selumetinib needs to be tested for the following genetic mutations: BRAF-p.V600E, MAP2K1-p.Q56_V60del."
     },
     {
         "question": "What genetic mutations need to be detected for dovitinib?",
-        "answer": "Output: Dovitinib needs to be detected for the following SNVs: FGFR3-p.S249C."
+        "answer": "Output: Dovitinib needs to be detected for FGFR3-p.S249C."
     },
     {
         "question": "Which genetic mutations are related to possible resistance to dabrafenib?",
-        "answer": "Output: The following snvfulls are related to possible resistance to dabrafenib: BRAF-p.L514V, BRAF-p.K601E."
+        "answer": "Output: The following genetic mutations are related to possible resistance to dabrafenib: BRAF-p.L514V, BRAF-p.K601E."
     },
     {
         "question": "How to treat pleura with NTRK1?",
@@ -1241,23 +1241,23 @@
     },
     {
         "question": "What are the genetic mutations in PLAG1?",
-        "answer": "Output: PLAG1 has the following snvfulls: PLAG1-p.L9F, PLAG1-p.L421S, PLAG1-p.K184N, PLAG1-p.R138G, PLAG1-p.G7D, PLAG1-p.S161R, PLAG1-p.L266F, PLAG1-p.V18A, PLAG1-p.T28S, PLAG1-p.Y54F."
+        "answer": "Output: PLAG1 has the following genetic mutations: PLAG1-p.L9F, PLAG1-p.L421S, PLAG1-p.K184N, PLAG1-p.R138G, PLAG1-p.G7D, PLAG1-p.S161R, PLAG1-p.L266F, PLAG1-p.V18A, PLAG1-p.T28S, PLAG1-p.Y54F."
     },
     {
         "question": "What are the genetic mutations in ZFHX3?",
-        "answer": "        Output: ZFHX3 has the following snvfulls: ZFHX3-p.A3627S, ZFHX3-p.E1494K, ZFHX3-p.E2414K, ZFHX3-p.E717Q, ZFHX3-p.S1646F, ZFHX3-p.P1190S, ZFHX3-p.P3581L, ZFHX3-p.A1861G, ZFHX3-p.E975K, ZFHX3-p.A2624V."
+        "answer": "        Output: ZFHX3 has the following genetic mutations: ZFHX3-p.A3627S, ZFHX3-p.E1494K, ZFHX3-p.E2414K, ZFHX3-p.E717Q, ZFHX3-p.S1646F, ZFHX3-p.P1190S, ZFHX3-p.P3581L, ZFHX3-p.A1861G, ZFHX3-p.E975K, ZFHX3-p.A2624V."
     },
     {
         "question": "What are the genetic mutations in PTPRD?",
-        "answer": "        Output: PTPRD has the following snvfulls: PTPRD-p.P1329Q, PTPRD-p.E21K, PTPRD-p.T799I, PTPRD-p.S646Y, PTPRD-p.M605I, PTPRD-p.S239Y, PTPRD-p.R1181L, PTPRD-p.K1102M, PTPRD-p.W1729C, PTPRD-p.T1086K."
+        "answer": "        Output: PTPRD has the following genetic mutations: PTPRD-p.P1329Q, PTPRD-p.E21K, PTPRD-p.T799I, PTPRD-p.S646Y, PTPRD-p.M605I, PTPRD-p.S239Y, PTPRD-p.R1181L, PTPRD-p.K1102M, PTPRD-p.W1729C, PTPRD-p.T1086K."
     },
     {
         "question": "What are the genetic mutations in CARD11?",
-        "answer": "Output: CARD11 has the following snvfulls: CARD11-p.P2L, CARD11-p.P295S, CARD11-p.N591Y, CARD11-p.K696R, CARD11-p.E432*, CARD11-p.P513T, CARD11-p.G830D, CARD11-p.N452S, CARD11-p.K184M, CARD11-p.K550N."
+        "answer": "Output: CARD11 has the following genetic mutations: CARD11-p.P2L, CARD11-p.P295S, CARD11-p.N591Y, CARD11-p.K696R, CARD11-p.E432*, CARD11-p.P513T, CARD11-p.G830D, CARD11-p.N452S, CARD11-p.K184M, CARD11-p.K550N."
     },
     {
         "question": "What are the genetic mutations in NBEA?",
-        "answer": "Output: NBEA has the following snvfulls: NBEA-p.K2111N, NBEA-p.V2431A, NBEA-p.A2614T, NBEA-p.Q1949L, NBEA-p.S731L, NBEA-p.I1000M, NBEA-p.C2737S, NBEA-p.D1698N, NBEA-p.E2486K, NBEA-p.A529T."
+        "answer": "Output: NBEA has the following genetic mutations: NBEA-p.K2111N, NBEA-p.V2431A, NBEA-p.A2614T, NBEA-p.Q1949L, NBEA-p.S731L, NBEA-p.I1000M, NBEA-p.C2737S, NBEA-p.D1698N, NBEA-p.E2486K, NBEA-p.A529T."
     },
     {
         "question": "What are the genetic mutations in PCDH17?",
@@ -1381,7 +1381,7 @@
     },
     {
         "question": "What diseases can be caused by mutations in the PALB2?",
-        "answer": "Output: The PHB gene mutations can cause breast cancer, ovarian cancer, and other diseases."
+        "answer": "Output: The PALB2 gene mutations can cause breast cancer, ovarian cancer, and other diseases."
     },
     {
         "question": "What diseases can be caused by mutations in the BLM?",
@@ -1393,7 +1393,7 @@
     },
     {
         "question": "What diseases can be caused by mutations in the CHEK2 gene?",
-        "answer": "Output: Wilms' tumor-Aniridia-ambiguous Genitals-mental Retardation (WAGR) syndrome, Wilms' tumor, and mesothelioma can be caused by mutations in the WT1 gene."
+        "answer": "Output: Wilms' tumor-Aniridia-ambiguous Genitals-mental Retardation (WAGR) syndrome."
     },
     {
         "question": "What diseases can NF2 gene mutation lead to?",
@@ -1413,7 +1413,7 @@
     },
     {
         "question": "What is the relationship between breast and CDH1?",
-        "answer": "        Output: The relationship between breast and CDH1 is: breast is a gene that is associated with CDH1."
+        "answer": "        Output: Breast is a gene that is associated with CDH1."
     },
     {
         "question": "What is the relationship between medulloblastoma and HRAS?",
