@@ -36,7 +36,7 @@ pip install -r requirements.txt
 You can obtain the SOKG_dataset.json from the dataset folder, which is a dataset containing 405 question-answer pairs.For access to the SmartQuerier Oncology Knowledge Graph, please contact at service@smartquerier.com.
 
 ### Downloading the Required LLMs
-You can download the corresponding model from the official website. For instance, if you need to download CodeLlama, you can visit the link [](https://github.com/facebookresearch/codellama.git)https://github.com/facebookresearch/codellama.git.
+You can download the corresponding model from the official website. For instance, if you need to download CodeLlama, you can visit the https://huggingface.co/codellama/CodeLlama-13b-Instruct-hf/tree/main.
 You can also visit the link below to download llama2:
 https://huggingface.co/meta-llama
 
