@@ -18,7 +18,7 @@ https://github.com/yichun10/bioKGQA/assets/156771528/4d7d123c-6a5a-4bc3-a766-ec2
 
 The information in the knowledge graph is as follows：
 
-<img width="977" alt="截屏2024-03-21 17 09 45" src="https://github.com/yichun10/bioKGQA/assets/156771528/9a37c532-556c-4c52-be7e-ec6ff0354742">
+<img width="1097" alt="截屏2024-03-22 12 03 43" src="https://github.com/yichun10/bioKGQA-KGT/assets/156771528/f9fed840-e460-41d8-8990-4e7558af2d34">
 
 
 Due to limited resources, we do not currently provide online demos. If you need an online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
