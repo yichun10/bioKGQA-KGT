@@ -71,7 +71,7 @@ pipeline1 = transformers.pipeline(
 )
 question = "" #Enter your question
 prompt = """
-You are a reasoning robot, and you need to perform the following two steps step by step: 1. Answer my question using natural language. 2.Translate all answers into English.
+You are a reasoning robot, and answer my question using natural language.
 """
 input_text1 = prompt+question
 sequences = pipeline1(
