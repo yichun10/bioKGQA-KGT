@@ -20,8 +20,7 @@ The information in the knowledge graph is as follows：
 
 <img width="1097" alt="截屏2024-03-22 12 03 43" src="https://github.com/yichun10/bioKGQA-KGT/assets/156771528/f9fed840-e460-41d8-8990-4e7558af2d34">
 
-
-Due to limited resources, we do not currently provide online demos. If you need an online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
+Due to limited resources, we currently only provide an online demo without Graph Schema-based inference. You can visit x for testing. If you need a complete online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
 
 ## Environments Setting
 1、In a conda env with PyTorch / CUDA available clone and download this repository.
