@@ -108,7 +108,7 @@ def QA_Q(old_question, link1, pipeline1, tokenizer):
             for ans in answersa:
                 linshi_answers += str(ans[0])  
             matcha = re.search(r"\['([^]]+)'\]", linshi_answers)
-            linshi_str = matcha.group(1) #头实体类型
+            linshi_str = matcha.group(1) 
             cypher_queryb=f"""
             MATCH (n {{name: '{b}'}}) 
             RETURN labels(n)
