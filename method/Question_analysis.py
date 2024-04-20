@@ -34,7 +34,7 @@ def QA_Q(old_question, link1, pipeline1, tokenizer):
     For example:
     What type of cancer can bexarotene treat?(bexarotene,Cancer,cancer.name)
     What are the targeted drugs for ERBB2 in lung cancer?(lung cancer,Drug,drug.class_type),(ERBB2,Drug,drug.class_type)
-    """#Due to copyright issues, the attribute list portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
+    """
     input_text1 = prompt + old_question
     sequences = pipeline1(
         input_text1,
