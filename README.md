@@ -104,41 +104,12 @@ link1 = Graph("address", auth=("neo4j", "password"))# KG information.
 file_path = './dataset/SOKG.json'  # Replace with your test JSON file path
 model1 = "./model/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
 ```
-2、You can obtain the Question_analysis.py from the method folder.
 
-Due to copyright issues, the attribute list portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
-```bash
-The attribute list is:
-"Drug": "drug.id, drug.name, drug.name_en, drug.description, drug.class_type, drug.nmpa_approved, drug.fda_approved, drug.commodity_name",
-"Cancer":"cancer.name, cancer.description, cancer.id, cancer.name_en",
-"Genesymbol":"genesymbol.id, genesymbol.name, genesymbol.grch37_refseq, genesymbol.tsg, genesymbol.description, genesymbol.oncogene, genesymbol.genesymbol_ncbi,genesymbol.full_name",
-......
-```
-
-3、You can obtain the Graph_Schema_based_inference.py from the method folder.
-
-Due to copyright issues, the ellipsis portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
-```bash
-edges = [  
-    ("Drug", "Genesymbol", {"relation": "activation_to"}), 
-    ("Genesymbol", "Drug", {"relation": "activation_to"}),
-    ("Drug", "Cancer", {"relation": "treatment"}),  
-    ("Cancer", "Drug", {"relation": "treatment"}), 
-    ("CancerCell", "DrugComb", {"relation": "resistance_to"}),  
-    ("CancerCell", "Drug", {"relation": "resistance_to"}),  
-    #......
-]
-```
-```bash
-node_information = """(Drug)-[:activation_to {}]->(Genesymbol),(Drug)-[:treatment {}]->(Cancer)......
-"""
-```
-
-4、After filling in the above information, run the main.py directly.
+2、After filling in the above information, run the main.py directly.
 ```bash
 python method/main.py
 ```
-Note: If you have not filled in the correct knowledge graph address and password, you may receive an error message.For access to the SmartQuerier Oncology Knowledge Graph, please contact at service@smartquerier.com.
+Note: If you have not filled in the correct knowledge graph address and password, you may receive an error message.
 
 Note: If the Codellama downloaded from the official website cannot be used directly, you can complete the conversion according to the following steps.
 
