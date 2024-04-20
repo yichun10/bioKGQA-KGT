@@ -11,8 +11,26 @@ def QA_Q(old_question, link1, pipeline1, tokenizer):
     "Drug": "drug.id, drug.name, drug.name_en, drug.description, drug.class_type, drug.nmpa_approved, drug.fda_approved, drug.commodity_name",
     "Cancer":"cancer.name, cancer.description, cancer.id, cancer.name_en",
     "Genesymbol":"genesymbol.id, genesymbol.name, genesymbol.grch37_refseq, genesymbol.tsg, genesymbol.description, genesymbol.oncogene, genesymbol.genesymbol_ncbi,genesymbol.full_name",
-    ......
-
+    "GeneticDisease":"geneticdisease.id, geneticdisease.name, geneticdisease.name_en, geneticdisease.description,geneticdisease.omim_id",
+    "ClinicalTrial":"clinicaltrial.id, clinicaltrial.name, clinicaltrial.description, clinicaltrial.url, clinicaltrial.start_phase, clinicaltrial.end_phase, clinicaltrial.target_size, clinicaltrial.recruitment_time, clinicaltrial.recruitment_status, clinicaltrial.countries, clinicaltrial.min_age, clinicaltrial.max_age, clinicaltrial.gender",
+    "CancerCell":"cancercell.id, cancercell.name",
+    "CNA":"cna.id, cna.name, cna.cna_val",
+    "Expression":"expression.id, expression.name, expression.exp_value",
+    "Fusion":"fusion.id, fusion.name",
+    "SnvDrugrule":"snvdrugrule.id, snvdrugrule.name, snvdrugrule.drug_rule",
+    "SnvPartial":"snvpartial.id, snvpartial.name, snvpartial.partial_pos, snvpartial.variant_type",
+    "SnvPathogenic":"snvpathogenic.id, snvpathogenic.name, snvpathogenic.pathogenic",
+    "SnvFull":"snvfull.id, snvfull.name, snvfull.biological_effect, snvfull.clinvar_significant, snvfull.exact_chgvs, snvfull.exact_phgvs, snvfull.oncogenic, snvfull.variant_type",
+    "SnvFunction":"snvfunction.id, snvfunction.name",
+    "SnvCarcinogenicity":"snvcarcinogenicity.id, snvcarcinogenicity.name",
+    "Pathway":"pathway.id, pathway.description, pathway.keggpathway_id, pathway.name",
+    "CompoundMutation":"compoundmutation.id, compoundmutation.name",
+    "DrugType":"drugtype.id, drugtype.atc_code, drugtype.name, drugtype.drugtype_name_en",
+    "Pt":"pt.id, pt.pt_code, pt.name, pt.pt_name_en",
+    "Soc":"soc.id, soc.soc_code, soc.name, soc.soc_name_en",
+    "CancerAlias":"canceralias.id, canceralias.name",
+    "DrugAlias":"drugalias.id, drugalias.name",
+    
     For example:
     What type of cancer can bexarotene treat?(bexarotene,Cancer,cancer.name)
     What are the targeted drugs for ERBB2 in lung cancer?(lung cancer,Drug,drug.class_type),(ERBB2,Drug,drug.class_type)
