@@ -9,14 +9,69 @@ def schema_inf(old_question, first_element, second_element, model1, tokenizer, c
             ("Genesymbol", "Drug", {"relation": "activation_to"}),
             ("Drug", "Cancer", {"relation": "treatment"}),  
             ("Cancer", "Drug", {"relation": "treatment"}), 
-            ("CancerCell", "DrugComb", {"relation": "resistance_to"}),  
             ("CancerCell", "Drug", {"relation": "resistance_to"}),  
-            #......
-        ]  #Due to copyright issues, the ellipsis portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
+            ("Drug", "CancerCell", {"relation": "resistance_to"}), 
+            ("CancerCell", "Cancer", {"relation": "originated_from"}),  
+            ("Cancer", "CancerCell", {"relation": "originated_from"}), 
+            ("Fusion", "Genesymbol", {"relation": "has_3gene"}),
+            ("SnvFull", "Genesymbol", {"relation": "has_gene"}),
+            ("Genesymbol", "SnvFull", {"relation": "has_gene"}),
+            ("Genesymbol", "Genesymbol", {"relation": "positive_regulated"}),
+            ("Fusion", "Genesymbol", {"relation": "has_5gene"}),
+            ("Genesymbol", "Genesymbol", {"relation": "negative_regulated"}),
+            ("Genesymbol", "GeneticDisease", {"relation": "cause_to"}),
+            ("ClinicalTrial", "Drug", {"relation": "include_a"}),
+            ("Pathway", "Genesymbol", {"relation": "include_a"}),
+            ("Genesymbol", "Pathway", {"relation": "include_a"}),
+            ("ClinicalTrial", "Cancer", {"relation": "include_a"}),
+            ("Cancer", "ClinicalTrial", {"relation": "include_a"}),
+            ("ClinicalTrial", "Genesymbol", {"relation": "include_a"}),
+            ("Genesymbol", "ClinicalTrial", {"relation": "include_a"}),
+            ("CancerCell", "SnvPartial", {"relation": "has_var"}),
+            ("SnvPartial", "CancerCell", {"relation": "has_var"}),
+            ("CancerCell", "Expression", {"relation": "has_var"}),
+            ("CancerCell", "CompoundMutation", {"relation": "has_var"}),
+            ("CancerCell", "Fusion", {"relation": "has_var"}),
+            ("CancerCell", "CNA", {"relation": "has_var"}),
+            ("CancerCell", "SnvDrugrule", {"relation": "has_var"}),
+            ("SnvDrugrule", "CancerCell", {"relation": "has_var"}),
+            ("CancerCell", "SnvFull", {"relation": "has_var"}),
+            ("SnvFull", "CancerCell", {"relation": "has_var"}),
+            ("Drug", "Genesymbol", {"relation": "inhibition_to"}),
+            ("CancerCell", "Drug", {"relation": "sensitivity_to"}),
+            ("Drug", "CancerCell", {"relation": "sensitivity_to"}),#
+            ("CancerCell", "DrugComb", {"relation": "sensitivity_to"}),
+            ("Genesymbol", "Genesymbol", {"relation": "synthetic_lethality"}),
+            ("GeneticDisease", "Cancer", {"relation": "develop_to"}),
+            ("DrugType", "DrugType", {"relation": "subclass_of"}),
+            ("Cancer", "Cancer", {"relation": "subclass_of"}),
+            ("CompoundMutation", "SnvFull", {"relation": "has_a"}),
+            ("SnvFunction", "SnvFull", {"relation": "has_a"}),
+            ("SnvCarcinogenicity", "SnvFull", {"relation": "has_a"}),
+            ("SnvCarcinogenicity", "Drug", {"relation": "has_a"}),
+            ("SnvPartial", "SnvFull", {"relation": "has_a"}),
+            ("DrugComb", "Drug", {"relation": "has_a"}),
+            ("SnvPathogenic", "SnvFull", {"relation": "has_a"}),
+            ("CompoundMutation", "Drug", {"relation": "has_a"}),
+            ("DrugType", "Drug", {"relation": "has_a"}),
+            ("DrugType", "SnvFull", {"relation": "has_a"}),
+            ("DrugComb", "SnvFull", {"relation": "has_a"}),
+            ("SnvDrugrule", "SnvFull", {"relation": "has_a"}),
+            ("Genesymbol", "Cancer", {"relation": "driving_to"}),
+            ("Cancer", "Genesymbol", {"relation": "driving_to"}),
+            ("Gene_Alias", "Soc", {"relation": "is_a"}),
+            ("CancerAlias", "Genesymbol", {"relation": "is_a"}),
+            ("Gene_Alias", "Genesymbol", {"relation": "is_a"}),
+            ("DrugAlias", "Soc", {"relation": "is_a"}),
+            ("CancerAlias", "Soc", {"relation": "is_a"}),
+            ("Pt", "Cancer", {"relation": "is_a"}),
+            ("DrugAlias", "Drug", {"relation": "is_a"}),
+            ("CancerAlias", "Drug", {"relation": "is_a"})
+        ]  
         G.add_edges_from(edges)  
 
-        node_information = """(Drug)-[:activation_to {}]->(Genesymbol),(Drug)-[:treatment {}]->(Cancer)......
-        """#Due to copyright issues, the ellipsis portion is temporarily unavailable for publication. You can add it according to the format after receiving the KG.
+        node_information = """(Drug)-[:activation_to {}]->(Genesymbol),(Drug)-[:treatment {}]->(Cancer),(CancerCell)-[:resistance_to {}]->(DrugComb),(CancerCell)-[:resistance_to {}]->(Drug),(CancerCell)-[:originated_from {}]->(Cancer),(Fusion)-[:has_3gene {}]->(Genesymbol),(SnvCarcinogenicity)-[:has_gene {}]->(Genesymbol),(Expression)-[:has_gene {}]->(Genesymbol),(SnvPartial)-[:has_gene {}]->(Genesymbol),(CNA)-[:has_gene {}]->(Genesymbol),(SnvDrugrule)-[:has_gene {}]->(Genesymbol),(SnvPathogenic)-[:has_gene {}]->(Genesymbol),(SnvFull)-[:has_gene {}]->(Genesymbol),(SnvFunction)-[:has_gene {}]->(Genesymbol),(Genesymbol)-[:positive_regulated {}]->(Genesymbol),(Fusion)-[:has_5gene {}]->(Genesymbol),(Drug)-[:induce_to {}]->(Pt),(Genesymbol)-[:negative_regulated {}]->(Genesymbol),(Genesymbol)-[:cause_to {}]->(GeneticDisease),(Pathway)-[:include_a {}]->(Cancer),(ClinicalTrial)-[:include_a {}]->(Drug),(Pathway)-[:include_a {}]->(Drug),(Pathway)-[:include_a {}]->(Genesymbol),(ClinicalTrial)-[:include_a {}]->(Cancer),(ClinicalTrial)-[:include_a {}]->(Genesymbol),(CancerCell)-[:has_var {}]->(SnvPartial),(CancerCell)-[:has_var {}]->(Expression),(CancerCell)-[:has_var {}]->(CompoundMutation),(CancerCell)-[:has_var {}]->(Fusion),(CancerCell)-[:has_var {}]->(CNA),(CancerCell)-[:has_var {}]->(SnvDrugrule),(CancerCell)-[:has_var {}]->(SnvFull),(Drug)-[:inhibition_to {}]->(Genesymbol),(CancerCell)-[:sensitivity_to {}]->(Drug),(CancerCell)-[:sensitivity_to {}]->(DrugComb),(Genesymbol)-[:synthetic_lethality {}]->(Genesymbol),(GeneticDisease)-[:develop_to {}]->(Cancer),(DrugType)-[:subclass_of {}]->(Cancer),(DrugType)-[:subclass_of {}]->(DrugType),(Cancer)-[:subclass_of {}]->(DrugType),(Cancer)-[:subclass_of {}]->(Cancer),(CompoundMutation)-[:has_a {}]->(SnvFull),(SnvFunction)-[:has_a {}]->(SnvFull),(SnvCarcinogenicity)-[:has_a {}]->(SnvFull),(SnvCarcinogenicity)-[:has_a {}]->(Drug),(SnvDrugrule)-[:has_a {}]->(Drug),(SnvPartial)-[:has_a {}]->(SnvFull),(DrugComb)-[:has_a {}]->(Drug),(SnvPathogenic)-[:has_a {}]->(SnvFull),(SnvPathogenic)-[:has_a {}]->(Drug),(SnvFunction)-[:has_a {}]->(Drug),(SnvPartial)-[:has_a {}]->(Drug),(CompoundMutation)-[:has_a {}]->(Drug),(DrugType)-[:has_a {}]->(Drug),(DrugType)-[:has_a {}]->(SnvFull),(DrugComb)-[:has_a {}]->(SnvFull),(SnvDrugrule)-[:has_a {}]->(SnvFull),(Genesymbol)-[:driving_to {}]->(Cancer),(Gene_Alias)-[:is_a {}]->(Soc),(Gene_Alias)-[:is_a {}]->(Cancer),(CancerAlias)-[:is_a {}]->(Genesymbol),(Gene_Alias)-[:is_a {}]->(Genesymbol),(DrugAlias)-[:is_a {}]->(Soc),(CancerAlias)-[:is_a {}]->(Soc),(Gene_Alias)-[:is_a {}]->(Drug),(Pt)-[:is_a {}]->(Cancer),(DrugAlias)-[:is_a {}]->(Drug),(CancerAlias)-[:is_a {}]->(Drug),(DrugAlias)-[:is_a {}]->(Genesymbol)
+        """
         shortest_paths = nx.all_shortest_paths(G, source=first_element, target=second_element)
         path_prompts = ""
         rel_links = [] 
