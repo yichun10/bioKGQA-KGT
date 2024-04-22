@@ -133,3 +133,14 @@ With the above information modified, run the following code in top-level folder.
 ```bash
 python evaluation/rouge.py
 ```
+## Citation
+If you use the repository of this project, please cite it.
+```
+@misc{2024.04.17.589873,
+  Author = {Yichun Feng, Lu Zhou, Yikai Zheng, Ruikun He, Chao Ma, Yixue Li},
+  Title = {Knowledge Graph-based Thought: a knowledge graph enhanced LLMs framework for pan-cancer question answering},
+  Year = {2024},
+  Howpublished = {bioRxiv},
+  DOI = {10.1101/2024.04.17.589873}
+}
+```
