@@ -104,7 +104,7 @@ link1 = Graph("address", auth=("neo4j", "password"))# KG information.
 file_path = './dataset/PcQA.json'  # Replace with your test JSON file path
 model1 = "./model/codellama/CodeLlama-13b-Instruct/13b_hf" #Your model path
 ```
-
+Note: You can build a knowledge graph based on the readme in the 'knowledge graph' folder to obtain KG information.
 2、After filling in the above information, run the main.py directly.
 ```bash
 python method/main.py
@@ -122,10 +122,10 @@ python /Tools/convert_llama_weights_to_hf.py --input_dir /model/CodeLlama-13b-In
 ### Evaluation
 We have designed three evaluation methods: ROUGE, BERT score, and an evaluator based on GPT-4. You simply need to enter the paths for the test set and the path for the generated answers in the corresponding fields to run it directly.
 ```bash
-with open('/answer/codellama13_SOKG.json', 'r') as file:
+with open('/answer/codellama13_PcQA.json', 'r') as file:
     test_datas = json.load(file)
 
-with open('/dataset/SOKG.json', 'r') as file:
+with open('/dataset/PcQA.json', 'r') as file:
     data = json.load(file)
 
 ```
