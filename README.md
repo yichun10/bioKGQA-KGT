@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ### Data preparation
 1、You can obtain the PcQA.json from the dataset folder, which is a dataset containing 405 question-answer pairs. 
 
-2、We make a portion of our knowledge graph available for public use. You can build the knowledge graph locally based on the 'knowledge graph' folder.
+2、We make a portion of our knowledge graph available for public use. You can build the knowledge graph locally based on the 'knowledge graph' folder, which can be used to validate our entire dataset.
 
 3、For access to the complete SmartQuerier Oncology Knowledge Graph, please contact at service@smartquerier.com.
 
