@@ -147,7 +147,7 @@ If you use the repository of this project, please cite it.
 
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0) - see the [LICENSE](LICENSE) file for details.
 
 
 
