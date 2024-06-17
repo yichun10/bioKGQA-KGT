@@ -147,7 +147,10 @@ If you use the repository of this project, please cite it.
 
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0) - see the [LICENSE](LICENSE) file for details.
+### Code
+The code in this repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+### Data
+The data in this repository is licensed under the Creative Commons Public Domain Dedication (CC0 1.0 Universal). See the [DATA_LICENSE](DATA_LICENSE) file for details.
 
 
