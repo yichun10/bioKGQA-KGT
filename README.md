@@ -22,6 +22,8 @@ The information in the knowledge graph is as follows：
 
 Due to limited resources, we currently only provide an online demo without Graph Schema-based inference. You can visit https://2dbb913b5b85b4bc91.gradio.live for testing. If you need a complete online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
 
+Please note that if the link https://2dbb913b5b85b4bc91.gradio.live is invalid, it may be due to infrequent updates, and you can also send an email to request an update.
+
 ## Environments Setting
 1、In a conda env with PyTorch / CUDA available clone and download this repository.
 
