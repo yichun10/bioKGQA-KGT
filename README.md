@@ -20,7 +20,7 @@ The information in the knowledge graph is as follows：
 
 <img width="1097" alt="截屏2024-03-22 12 03 43" src="https://github.com/yichun10/bioKGQA-KGT/assets/156771528/f9fed840-e460-41d8-8990-4e7558af2d34">
 
-Due to limited resources, we currently only provide an online demo without Graph Schema-based inference. You can visit https://2dbb913b5b85b4bc91.gradio.live for testing. If you need a complete online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
+Due to limited resources, we currently only provide an online demo without Graph Schema-based inference. You can visit [https://2dbb913b5b85b4bc91.gradio.live](https://0c75b6a18b517be38e.gradio.live) for testing. If you need a complete online demo, you can send an email to fengyichun22@mails.ucas.ac.cn. We suggest downloading the model for local testing.
 
 Please note that if the link https://2dbb913b5b85b4bc91.gradio.live is invalid, it may be due to infrequent updates, and you can also send an email to request an update.
 
