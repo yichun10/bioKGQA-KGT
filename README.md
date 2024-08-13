@@ -25,8 +25,14 @@ Due to limited resources, we currently only provide an online demo without Graph
 Please note that if the link https://395ff27eb5cbf8dac5.gradio.live is invalid, it may be due to infrequent updates, and you can also send an email to request an update.
 
 ## SDKG Demo
+To demonstrate the versatility of our method, we manually designed several QA pairs based on SDKG (the data for this knowledge graph is available at https://github.com/ZhuChaoY/SDKG-11/tree/main/Dataset) and tested them using our approach (KGT).
 
-https://github.com/user-attachments/assets/e70b95ef-10c8-42b4-935a-e21dc7dcfdb1
+You can see our demo through the following video:
+
+https://github.com/user-attachments/assets/9b6b1fbf-d87d-4548-b3d1-21b54b7d9aeb
+
+
+
 
 
 
