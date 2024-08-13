@@ -24,6 +24,12 @@ Due to limited resources, we currently only provide an online demo without Graph
 
 Please note that if the link https://395ff27eb5cbf8dac5.gradio.live is invalid, it may be due to infrequent updates, and you can also send an email to request an update.
 
+## SDKG Demo
+
+https://github.com/user-attachments/assets/e70b95ef-10c8-42b4-935a-e21dc7dcfdb1
+
+
+
 ## Environments Setting
 1、In a conda env with PyTorch / CUDA available clone and download this repository.
 
