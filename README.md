@@ -29,7 +29,11 @@ To demonstrate the versatility of our method, we manually designed several QA pa
 
 You can see our demo through the following video:
 
-https://github.com/user-attachments/assets/9b6b1fbf-d87d-4548-b3d1-21b54b7d9aeb
+
+https://github.com/user-attachments/assets/3faf74d1-cb62-451b-afcd-fc9442f4cc6b
+
+
+
 
 
 
