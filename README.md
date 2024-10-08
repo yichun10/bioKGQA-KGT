@@ -155,7 +155,7 @@ python evaluation/rouge.py
 If you use the repository of this project, please cite it.
 ```
 @article{Feng2024,
-  author = {Yichun Feng and Lu Zhou and Yikai Zheng and Ruikun He and Chao Ma and Yixue Li},
+  author = {Yichun Feng and Lu Zhou and Chao Ma and Yikai Zheng and Ruikun He and Yixue Li},
   title = {Knowledge Graph-based Thought: a knowledge graph enhanced LLMs framework for pan-cancer question answering},
   journal = {GigaScience},
   year = {2024},
