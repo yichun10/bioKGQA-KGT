@@ -154,13 +154,14 @@ python evaluation/rouge.py
 ## Citation
 If you use the repository of this project, please cite it.
 ```
-@article{Feng2024,
-  author = {Yichun Feng and Lu Zhou and Chao Ma and Yikai Zheng and Ruikun He and Yixue Li},
-  title = {Knowledge Graph-based Thought: a knowledge graph enhanced LLMs framework for pan-cancer question answering},
-  journal = {GigaScience},
-  year = {2024},
-  doi = {10.1093/gigascience/giae082},
-  note = {Accepted for publication, to appear},
+@article{feng2025knowledge,
+  title={Knowledge graph--based thought: a knowledge graph--enhanced LLM framework for pan-cancer question answering},
+  author={Feng, Yichun and Zhou, Lu and Ma, Chao and Zheng, Yikai and He, Ruikun and Li, Yixue},
+  journal={GigaScience},
+  volume={14},
+  pages={giae082},
+  year={2025},
+  publisher={Oxford University Press}
 }
 
 ```
